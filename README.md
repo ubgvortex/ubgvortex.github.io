@@ -1,5 +1,5 @@
 # 🎮 Online GAMES ! 🥷
-Play at https://coder3527.github.io/
+Play at https://ubgvortex.netlify.app/
 
 Open an issue to request a game
 
