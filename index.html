@@ -143,7 +143,7 @@
     <div class="container">
         <h1 class="fly">🌀 UBG Vortex 🌀</h1>
         <h3>A vortex of video games in your browser !</h3>
-        <a class="cloak-link" onclick="openCloak()">Tab cloak</a>
+        <a class="cloak-link" onclick="cloak()">about:blank cloak</a>
         <a href="/games/yohoho/index.html" class="game-link"> <img src="/imgs/IMG_1020.webp" class="game-img"> Play Yohoho.io</a>
         <a href="/games/paperio/index.html" class="game-link"> <img src="/imgs/IMG_1021.jpeg" class="game-img"> Play Paper.io</a>
    
@@ -160,17 +160,16 @@
         <a href="/games/survivalrace/index.html" class="game-link"> <img src="/imgs/IMG_1051.jpeg" class="game-img"> Play Survival Race</a>
         <a href="https://linkh.at/h64Rl121zqs4" class="gh-link"> <img src="/imgs/IMG_1029.jpeg" class="game-img"> GitHub</a>
         <script>
-           function openCloak() {
-              var win = window.open()
-              var url = "https://ubgvortex.github.io"
-              var iframe = win.document.createElement('iframe')
-              iframe.style.width = "100%";
-              iframe.style.height = "100%";
-              iframe.style.border = "none";
-              iframe.style.margin = "0";
-              iframe.src = url
-              win.document.body.appendChild(iframe)
-           }
+            function cloak() {
+                var page = new ABC({
+                    "type": "blank", //Blank, blob, or overwrite
+                    "url": "https://ubgvortex.github.io" //Any url
+                })
+                page.setType("blank")
+                page.setUrl("https://ubgvortex.github.io")
+                console.log(page.getCode())
+                page.open()
+            }
 </script>
         <footer>
             <a href="credits.txt" class="credits-link">Credits</a>
