@@ -1,4 +1,4 @@
-# 🎮 Online GAMES ! 🥷
+# 🌀 UBG Vortex 🌀
 Vortex of unblocked video games !
 
 Play at https://ubgvortex.github.io/
