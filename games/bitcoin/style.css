@@ -1,0 +1,105 @@
+html, body {
+  touch-action: manipulation; /* Or 'none', but 'manipulation' is safer */
+}
+body {
+  background: #000;
+  color: #FFD700;
+  font-family: monospace, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#main {
+  width: 400px;
+  margin: 40px auto;
+  background: #111;
+  border-radius: 12px;
+  padding: 32px 24px 32px 24px;
+  box-shadow: 0 3px 20px #222;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #FFD700;
+  margin-bottom: 20px;
+}
+
+#btc-display {
+  font-size: 2.2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#click-btn, #save-btn, #load-btn, #reset-btn {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 10px 20px;
+  margin: 10px auto 20px auto;
+  display: block;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#click-btn:hover, #save-btn:hover, #load-btn:hover, #reset-btn:hover {
+  background: #ffe066;
+}
+
+#per-sec {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#shop {
+  margin-top: 8px;
+}
+
+.upgrade {
+  background: #222;
+  border: 1px solid #FFD700;
+  border-radius: 8px;
+  padding: 12px 10px 10px 10px;
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.upgrade-name {
+  font-size: 1.12em;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.upgrade-desc {
+  font-size: 0.85em;
+  color: #FFD700;
+  padding-top: 2px;
+}
+
+.upgrade-cost {
+  color: #FFD700;
+  font-size: 1em;
+}
+
+.upgrade-btn {
+  background: #FFD700;
+  color: #000;
+  border: none;
+  border-radius: 6px;
+  padding: 7px 15px;
+  font-weight: bold;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.upgrade-btn:disabled {
+  background: #444;
+  color: #FFD700;
+  cursor: not-allowed;
+}
+.upgrade-btn:hover:not(:disabled) {
+  background: #ffe066;
+}
