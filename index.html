@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="cloak.js"></script>
+    
+    <title>Krypcide's UBG</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            text-align: center; /* Default text alignment for smaller screens */
+        }
+      /*  .glow {
+            animation: glow-animate 2s infinite alternate;
+        }
+
+        @keyframes glow-animate {
+            from {
+               text-shadow:
+                   0 0 10px #ffffff,
+                   0 0 20px #fff9c0,
+                   0 0 30px #ffffff;
+               color: #fffbe7;
+            }
+            to {
+              text-shadow:
+                   0 0 20px #fff9c0,
+                   0 0 40px #fffacc,
+                   0 0 60px #fffbe7;
+              color: #fffde2;
+             }
+        } */
+
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%; /* Adjust width for smaller screens */
+            max-width: 600px; /* Maximum width for larger screens */
+            margin: 20px; /* Add margin for spacing */
+        }
+
+        h1 {
+            color: #000;
+            font-size: 2em; /* Adjust font size for better readability */
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #000;
+          /*  text-shadow: 1px 1px 2px #888; */
+        }
+
+        .game-link {
+            font-size: 1.1em;
+            display: block;
+            margin: 10px auto; /* Center the links */
+            padding: 12px 24px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            width: fit-content; /* Make the button fit its content */
+        }
+        .game-img {
+            border-radius: 15px;
+            vertical-align: middle;
+            width: 25px;
+            height: 25px;
+        }
+        .gh-link {
+            font-size: 1.1em;
+            display: block;
+            margin: 10px auto; /* Center the links */
+            padding: 12px 24px;
+            background-color: black;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            width: fit-content; /* Make the button fit its content */
+        }
+        .cloak-link {
+            font-size: 1.1em;
+            display: block;
+            margin: 10px auto; /* Center the links */
+            padding: 12px 24px;
+            background-color: red;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            width: fit-content; /* Make the button fit its content */
+        }
+        .proxy-link {
+            font-size: 1.1em;
+            display: block;
+            margin: 10px auto; /* Center the links */
+            padding: 12px 24px;
+            background-color: green;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+            width: fit-content; /* Make the button fit its content */
+        }
+        
+        .credits-link {
+            font-size: 1.1em;
+          /*  display: block; */
+            margin: 10px auto; /* Center the links */
+            padding: 12px 24px;
+          /*  background-color: #007bff; */
+            color: gray;
+            text-decoration: none;
+            border-radius: 5px;
+         /*   transition: background-color 0.3s ease; */ /* Smooth transition for hover effect */
+            width: fit-content; /* Make the button fit its content */
+        }
+
+        .game-link:hover {
+            background-color: #0056b3;
+        }
+
+        /* Media query for larger screens */
+        @media (min-width: 768px) {
+            body {
+                text-align: center; /* Center content on larger screens */
+            }
+
+            .container {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 2.5em;
+            }
+
+            .game-link {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+            .proxy-link {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+            .gh-link {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+            .cloak-link {
+                padding: 15px 30px;
+                font-size: 1.1em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="fly">🌀 Krypcide's UBG 🌀</h1>
+        <h3>A vortex of video games in your browser !</h3>
+        <a class="cloak-link" onclick="abcloak()">[about:blank] cloak</a>
+        <a class="cloak-link" onclick="blobcloak()">[blob:] cloak</a>
+        <a class="proxy-link" href="/proxy/index.html">Helios Proxy</a>
+        <a href="/games/yohoho/index.html" class="game-link"> <img src="/imgs/IMG_1020.webp" class="game-img"> Play Yohoho.io</a>
+        <a href="/games/paperio/index.html" class="game-link"> <img src="/imgs/IMG_1021.jpeg" class="game-img"> Play Paper.io</a>
+   
+        <a href="/games/bitcoin/index.html" class="game-link">[BETA] Bitcoin Clicker</a>
+        
+        <a href="/games/subway-surfers-tokyo/index.html" class="game-link"> <img src="/imgs/IMG_1026.jpeg" class="game-img"> Play Subway Surfers</a>
+        <a href="/games/stack/index.html" class="game-link"> <img src="/imgs/IMG_1031.png" class="game-img"> Play Stack game</a>
+        <a href="/games/minecraft/index.html" class="game-link"> <img src="/imgs/IMG_1032.jpeg" class="game-img"> Play Minecraft</a>
+        <a href="/games/holeio/index.html" class="game-link"> <img src="/imgs/IMG_1033.jpeg" class="game-img"> Play Hole.io</a>
+        
+        <a href="/games/cookieclicker/docs/index.html" class="game-link"> <img src="/imgs/IMG_1036.png" class="game-img"> Play Cookie Clicker</a>
+        <a href="/games/gunspin/index.html" class="game-link"> <img src="/imgs/gunspin.png" class="game-img"> Play GunSpin</a>
+        <a href="/games/ovo/index.html" class="game-link"> <img src="/imgs/IMG_1050.png" class="game-img"> Play OvO</a>
+        <a href="/games/survivalrace/index.html" class="game-link"> <img src="/imgs/IMG_1051.jpeg" class="game-img"> Play Survival Race</a>
+        <a href="https://linkh.at/h64Rl121zqs4" class="gh-link"> <img src="/imgs/IMG_1029.jpeg" class="game-img"> GitHub</a>
+        <script>
+            function abcloak() {
+                var page = new ABC({
+                    "type": "blank", //Blank, blob, or overwrite
+                    "url": "https://krypcide.github.io" //Any url
+                })
+                page.setType("blank")
+                page.setUrl("https://krypcide.github.io")
+                console.log(page.getCode())
+                page.open()
+            }
+        </script>
+        <script>
+            function blobcloak() {
+                var page = new ABC({
+                    "type": "blob", //Blank, blob, or overwrite
+                    "url": "https://krypcide.github.io" //Any url
+                })
+                page.setType("blob")
+                page.setUrl("https://krypcide.github.io")
+                console.log(page.getCode())
+                page.open()
+            }
+        </script>
+        <footer>
+            <a href="credits.txt" class="credits-link">Credits</a>
+        </footer>
+    </div>
+    
+
+
+</body>
+</html>

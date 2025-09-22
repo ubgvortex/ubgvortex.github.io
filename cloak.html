@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>URL Input Page</title>
+    <script src="cloak.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background: #f5f5f5;
+        }
+        .container {
+            background: #fff;
+            padding: 24px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        input[type="url"] {
+            width: 100%;
+            padding: 8px 12px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            padding: 10px 18px;
+            margin-right: 10px;
+            border: none;
+            border-radius: 4px;
+            background: #0078d4;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        button:last-child {
+            background: #666;
+        }
+        button:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <label for="urlField">Enter URL:</label>
+        <input type="url" id="urlField" placeholder="https://example.com" required>
+        <div>
+            <button id="button1">Button 1</button>
+            <button id="button2">Button 2</button>
+        </div>
+    </div>
+    <script>
+            function abcloak() {
+                const url = document.getElementById('urlField').value;
+                var page = new ABC({
+                    "type": "blank", //Blank, blob, or overwrite
+                    "url": url //Any url
+                })
+                page.setType("blank")
+                page.setUrl(url)
+                console.log(page.getCode())
+                page.open()
+            }
+        </script>
+        <script>
+            function blobcloak() {
+                const url = document.getElementById('urlField').value;
+                var page = new ABC({
+                    "type": "blob", //Blank, blob, or overwrite
+                    "url": url //Any url
+                })
+                page.setType("blob")
+                page.setUrl(url)
+                console.log(page.getCode())
+                page.open()
+            }
+        </script>
+</body>
+</html>
