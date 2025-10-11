@@ -1,2 +1,2 @@
-# games-website
-Play at https://primecoder777.github.io
+# ubgvortex games-website
+Play at https://ubgvortex.netlify.app
