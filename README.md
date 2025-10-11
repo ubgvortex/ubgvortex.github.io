@@ -1,2 +1,2 @@
 # ubgvortex games-website
-Play at https://ubgvortex.netlify.app
+Play at https://ubgvortex.github.io
