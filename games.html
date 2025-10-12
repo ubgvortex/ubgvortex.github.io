@@ -10,7 +10,6 @@
       color: #222;
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
-      margin-top: 56px;
       padding: 0;
       transition: background 0.3s, color 0.3s;
     }
@@ -92,6 +91,9 @@
       width: 100%; height: 100%;
       z-index: 2;
     }
+    main{
+      margin-top: 56px;
+    }
     @media (max-width: 600px) {
       .games-grid {
         grid-template-columns: repeat(3, 1fr);
@@ -139,6 +141,7 @@
     <a href="">Games</a>
     <a href="proxy.html">Pr0xy</a>
   </div>
+  <div class="main">
   <h1>UBGVortex Games</h1>
   <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Lite Mode</button>
   <div class="games-grid">
@@ -248,6 +251,7 @@
       <div class="game-title">Ragdoll Archers</div>
       <a class="game-link" href="games/ragdollarchers/index.html"></a>
     </div>
+  </div>
   </div>
   <script>
     function toggleTheme() {
