@@ -1818,7 +1818,7 @@ document.addEventListener("DOMContentLoaded", function() {
             if (officialUrls.includes(pageUrl)) {
                 console.log("DEBUG: Official Helios URL detected.");
                 iconElement.classList.add("fa", "fa-circle-check", "sitechecker-secure");
-                messageElement.innerHTML = `This link <b>(${pageUrl})</b> is a secure, official Helios Browser link.`;
+                messageElement.innerHTML = ` <b>(${pageUrl})</b> is a secure Helios Browser link.`;
             } else {
                 console.log("DEBUG: UNOFFICIAL URL detected!");
                 iconElement.classList.add("fa", "fa-triangle-exclamation", "sitechecker-warning");
