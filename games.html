@@ -106,8 +106,11 @@
       }
     }
     .navbar {
+      position: fixed;
       width: 100%;
-      background-color: #222;
+      background: rgba(255,255,255,0.15); /* Transparent white */
+      backdrop-filter: blur(10px);        /* Glass blur effect */
+      -webkit-backdrop-filter: blur(10px);/* Safari support */
       overflow: hidden;
       display: flex;
       justify-content: center;
@@ -116,16 +119,16 @@
       padding: 0;
     }
     .navbar a {
-      color: #fff;
+      color: #000;
       padding: 16px 24px;
       text-decoration: none;
       text-align: center;
       font-weight: bold;
       transition: background 0.3s;
     }
-    .navbar a:hover {
+  /*  .navbar a:hover {
       background: #444;
-    }
+    } */
   </style>
 </head>
 <body>
