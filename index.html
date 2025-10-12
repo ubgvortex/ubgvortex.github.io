@@ -119,18 +119,25 @@
       }
     }
     .navbar {
-      position: fixed;          /* Always stays at the top */
-      top: 0;
-      left: 0;
+      position: fixed;
       width: 100%;
-      z-index: 1000;            /* On top of other elements */
       background: rgba(255,255,255,0.15); /* Transparent white */
       backdrop-filter: blur(10px);        /* Glass blur effect */
       -webkit-backdrop-filter: blur(10px);/* Safari support */
-      border-bottom: 1px solid rgba(255,255,255,0.3);
-      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-      color: #fff;
-      padding: 12px 32px;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+    }
+    .navbar a {
+      color: #000;
+      padding: 16px 24px;
+      text-decoration: none;
+      text-align: center;
+      font-weight: bold;
+      transition: background 0.3s;
     }
     .status {
       text-align: center;
