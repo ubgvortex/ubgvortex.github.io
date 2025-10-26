@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>UBGVortex</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <style>
     body {
       background: #fafaff;
@@ -11,7 +11,6 @@
       font-family: 'Segoe UI', Arial, sans-serif;
       margin: 0;
       padding: 0;
-      padding-top: 0;
       transition: background 0.3s, color 0.3s;
     }
     .dark-mode {
@@ -29,13 +28,13 @@
       margin-top: 30px;
       letter-spacing: 2px;
     }
-    a {
-      text-align: center;
-    }
     h4 {
       text-align: center;
       margin-top: 30px;
       letter-spacing: 2px;
+    }
+    a {
+      text-align: center;
     }
     .theme-toggle {
       display: block;
@@ -64,7 +63,7 @@
     .game-card {
       background: #fff;
       border-radius: 16px;
-      box-shadow: 0 2px 16px rgba(0,0,0,0.06);
+      box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
       text-align: center;
       padding: 22px 10px;
       transition: transform 0.18s, box-shadow 0.18s, background 0.3s, color 0.3s;
@@ -73,7 +72,7 @@
     }
     .game-card:hover {
       transform: scale(1.04);
-      box-shadow: 0 6px 28px rgba(0,0,0,0.13);
+      box-shadow: 0 6px 28px rgba(0, 0, 0, 0.13);
     }
     .dark-mode .game-card {
       background: #22232b;
@@ -86,7 +85,7 @@
       border-radius: 14px;
       margin-bottom: 10px;
       background: #f3f3f5;
-      box-shadow: 0 1px 8px rgba(0,0,0,0.08);
+      box-shadow: 0 1px 8px rgba(0, 0, 0, 0.08);
     }
     .game-title {
       font-size: 1.08rem;
@@ -98,12 +97,17 @@
       color: #ffd966;
     }
     .game-link {
-      text-decoration: none;
-      color: inherit;
       position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 100%;
+      top: 0; 
+      left: 0;
+      width: 100%; 
+      height: 100%;
       z-index: 2;
+      text-decoration: none;
+    }
+    /* Optional: Make the link transparent to not interfere visually */
+    .game-link {
+      background: transparent;
     }
     .main {
       margin-top: 56px;
@@ -125,14 +129,12 @@
     .navbar {
       position: fixed;
       width: 100%;
-      background: rgba(255,255,255,0.15); /* Transparent white */
-      backdrop-filter: blur(10px);        /* Glass blur effect */
-      -webkit-backdrop-filter: blur(10px);/* Safari support */
-      overflow: hidden;
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
       display: flex;
       justify-content: center;
       align-items: center;
-      margin: 0;
       padding: 0;
       top: 0;
       z-index: 1000;
@@ -141,34 +143,34 @@
       color: #000;
       padding: 16px 24px;
       text-decoration: none;
-      text-align: center;
       font-weight: bold;
       transition: background 0.3s;
-      background: none;
-      border: none;
-      padding: 0;
+    }
+    /* Optional hover effect for navbar links */
+    .navbar a:hover {
+      background: rgba(0, 0, 0, 0.1);
     }
     .status {
       text-align: center;
       color: black;
     }
     footer {
-     text-align: center;
-     padding: 5px;
-     color: #000;
+      text-align: center;
+      padding: 5px;
+      color: #000;
     }
     .tomorrow {
       width: 80%;
       display: block;
-      margin-right: auto;
-      margin-left: auto;
+      margin: 0 auto;
     }
     .stats {
       position: fixed;
       bottom: 0;
-      text-align:center;
-      margin-left:auto;
-      margin-right:auto;
+      width: 100%;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
     }
   </style>
 </head>
@@ -179,33 +181,61 @@
     <a href="proxy.html">Pr0xy</a>
     <a href="extra.html">Extra</a>
     <a href="https://ubgvortex.github.io/AI">AI</a>
-    <a onclick="openGame()" href="#">Tab Cloak</a>
+    <a href="#" onclick="openGame(); return false;">Tab Cloak</a>
   </div>
   <div class="main">
-  <h1>UBGVortex Games</h1>
-  <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Lite Mode</button>
-  <h2>A vortex of video games in your browser</h2>
-  <h4>Play limitless !</h4>
-    <br>
+    <h1>UBGVortex Games</h1>
+    <button class="theme-toggle" onclick="toggleTheme()">Toggle Dark/Lite Mode</button>
+    <h2>A vortex of video games in your browser</h2>
+    <h4>Play limitless!</h4>
+    <br />
     <div class="stats">
-    <script type="text/javascript" src="https://www.stat-counter.org/count/itny"></script><br>
- <a href='https://www.wgglobal.de/'>Leinensicherung</a> <script type='text/javascript' src='https://whomania.com/ctr?id=d369b94f1a743d8e6758977fff353b63704c5022'></script>
+      <!-- Make sure the script URLs are correct and accessible -->
+      <script type="text/javascript" src="https://www.stat-counter.org/count/itny"></script>
+      <br />
+      <a href='https://www.wgglobal.de/'>Leinensicherung</a>
+      <script type='text/javascript' src='https://whomania.com/ctr?id=d369b94f1a743d8e6758977fff353b63704c5022'></script>
     </div>
-</div>
+  </div>
   <script>
     function toggleTheme() {
       document.body.classList.toggle('dark-mode');
     }
+
     function openGame() {
-      var win = window.open
-      var url = window.location.href
-      var iframe = win.document.createElement('iframe')
-      iframe.style.width = "100%" ;
-      iframe.style.height = "100%" ;
-      iframe.style.border = "none";
-      iframe.src = url
-      win.document.body.appendChild(iframe)
+      // Open a new window with an iframe inside
+      const win = window.open('', '_blank'); // Open new blank window
+      if (win) {
+        // Wait until the window is loaded before writing content
+        win.document.write(`
+          <!DOCTYPE html>
+          <html lang="en">
+          <head>
+            <meta charset="UTF-8" />
+            <title>Game</title>
+            <style>
+              html, body {
+                margin: 0;
+                padding: 0;
+                height: 100%;
+                overflow: hidden;
+              }
+              iframe {
+                width: 100%;
+                height: 100%;
+                border: none;
+              }
+            </style>
+          </head>
+          <body>
+            <iframe src="${window.location.href}"></iframe>
+          </body>
+          </html>
+        `);
+        // Optionally, focus the new window
+        win.focus();
+      }
     }
-</script>
+  </script>
 </body>
 </html>
