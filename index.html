@@ -174,6 +174,7 @@
     <a href="proxy.html">Pr0xy</a>
     <a href="extra.html">Extra</a>
     <a href="https://ubgvortex.github.io/AI">AI</a>
+    <a onclick="openGame()" href="#">Tab Cloak</a>
   </div>
   <div class="main">
   <h1>UBGVortex Games</h1>
@@ -191,5 +192,17 @@
       document.body.classList.toggle('dark-mode');
     }
   </script>
+  <script>
+function openGame() {
+var win = window.open
+var url = window.location.href
+var iframe = win.document.createElement('iframe')
+iframe.style.width = "100%" ;
+iframe.style.height = "100%" ;
+iframe.style.border = "none";
+iframe.src = url
+win. document.body appendChild(iframe)
+}
+</script>
 </body>
 </html>
