@@ -202,7 +202,26 @@
       document.body.classList.toggle('dark-mode');
     }
     function openGame() {
-  window.open(window.location.href, '_blank');
+ // Get the current page's URL
+            var currentURL = window.location.href;
+
+            // Open a new window with about:blank
+            var newWindow = window.open('about:blank');
+
+            // Write content into the new window
+            newWindow.document.write(`
+                <html>
+                <head>
+                    <title>Embedded URL</title>
+                </head>
+                <body>
+                    <h1>Embedded URL</h1>
+                    <p>The URL where the script runs:</p>
+                    <input type="text" value="${currentURL}" readonly style="width:100%; font-size:1em;">
+                </body>
+                </html>
+            `);
+            newWindow.document.close();
 }
     
   </script>
