@@ -1,8 +1,8 @@
-# ubgvortex games-website
-Play at https://ubgvortex.github.io
+# V0rtex Games
+Play at https://v0rtexgames.github.io
 ## Credits
 All games belongs to their coders. I do not coded any of those games <br>
 Helios proxy by dinguschan-owo
 ### Alt Links :
-https://ubgvortex.pages.dev <br>
-https://ubgvortex.wasmer.app
+https://vortexgames.pages.dev <br>
+https://vortexgames.wasmer.app
